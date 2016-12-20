@@ -25,8 +25,9 @@ class BandController extends Controller
     public function show($id)
     {
         $band = Band::find($id);
+        $albums = $band->albums;
 
-        return view('bands.show', compact('band'));
+        return view('bands.show', compact('band', 'albums'));
     }
 
     /**

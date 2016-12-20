@@ -17,4 +17,7 @@
         <li class="list-group-item">Website: {{ $band->website }}</li>
         <li class="list-group-item">Still Active: {{ ($band->still_active) ? 'Yes' : 'No' }}</li>
     </ul>
+
+    <h4>Albums</h4>
+    @include('partials.album-list')
 @endsection

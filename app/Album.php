@@ -15,4 +15,9 @@ class Album extends Model
     {
         return $this->belongsTo(Band::class);
     }
+
+    public function getId()
+    {
+        return $this->id;
+    }
 }

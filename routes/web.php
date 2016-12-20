@@ -11,5 +11,8 @@
 |
 */
 
-Route::get('/', 'BandController@index');
+Route::get('/', function() {
+    return redirect('/band');
+});
 Route::resource('/band', 'BandController');
+Route::resource('/album', 'AlbumController');
